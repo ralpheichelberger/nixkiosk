@@ -9,7 +9,7 @@
         system = "x86_64-linux";
         modules = [
           disko.nixosModules.disko
-          ./configuration2.nix
+          ./configuration_infoboard.nix
         ];
       };
       
