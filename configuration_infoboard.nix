@@ -15,7 +15,7 @@
   services.cage = {
     enable = true;
     user = "signage";
-    program = (pkgs.chromium).outPath+"/bin/chromium --kiosk http://mula-mfs5/page111.php";
+    program = (pkgs.chromium).outPath+"/bin/chromium --kiosk http://nvr708061:8080/";
   };
    users.users.signage = {
     isNormalUser = true;
