@@ -1,6 +1,5 @@
-nix run github:nix-community/nixos-anywhere -- --debug --flake '.#infoboard' root@192.168.30.113
+#install
+nix run github:nix-community/nixos-anywhere -- --debug --flake '.#infoboard' root@192.168.30.133
 
-?? nixos-rebuild switch --flake <URL to your flake> --target-host "root@<ip address>"
-
-
-nixos-rebuild switch --flake .# --target-host root@192.168.30.113
+#update after configuration changed
+nixos-rebuild switch --flake .#infoboard --target-host root@192.168.30.133
