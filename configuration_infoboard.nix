@@ -12,12 +12,12 @@
   };
   services.openssh.enable = true;
 
-  services.cage = {
-    enable = true;
-    user = "signage";
-    program = (pkgs.chromium).outPath+"/bin/chromium --kiosk http://nvr708061:8080/";
-  };
-   users.users.signage = {
+  #services.cage = {
+   # enable = true;
+   # user = "signage";
+   # program = (pkgs.chromium).outPath+"/bin/chromium";
+  #};
+  users.users.signage = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
